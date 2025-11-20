@@ -9,8 +9,8 @@ to list drives
 
 ```sudo fdisk -l``` 
 
-o burn iso w/ status
+To burn iso w/ status
 
-```sudo dd if=<FILENAME>.iso of=/dev/<DRIVE> conv=fsync bs=4M status=progress```
+```sudo dd if=<FILENAME>.iso of=/dev/<DRIVE> status=progress```
 
 ```sync```
