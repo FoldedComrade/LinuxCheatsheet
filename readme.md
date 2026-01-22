@@ -1,3 +1,9 @@
+# Claim a USB port for flashing devices via browser
+```sudo setfacl -m u:<USERNAME>:rw /dev/<device>```
+
+To list devices (typically /dev/TTYACM# or TTYUSB#)
+```ls /dev/tty*```
+
 # Burn an ISO to a drive
 ## Mint GUI
 Right click .iso > Make Bootable USB
