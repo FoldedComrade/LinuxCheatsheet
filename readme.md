@@ -20,3 +20,14 @@ To burn iso w/ status
 ```sudo dd if=<FILENAME>.iso of=/dev/<DRIVE> status=progress```
 
 ```sync```
+
+# Integrate an AppImage
+AppImages are standalone files that don't get "installed" but do need made executable and then managed a bit to appear in the app menu
+## Mint GUI
+* Navigate to file, go Properties>Permissions and tick "Allow executing file as program"
+* Move file to /home/<USERNAME>/Applications (or wherever you want to store them)
+* Right click start menu>Edit Menu, select desired folder and select "New Item"
+* Set name to whatever you want
+* Set command to /home/user/Applications/<your appimage>
+*   Some things (raspberry pi imager) might need sudo in front of the command
+* OK
